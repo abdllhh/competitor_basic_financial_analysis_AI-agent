@@ -34,7 +34,7 @@ def query_huggingface(prompt, retries=3, delay=5):
 # Fetch financial data using yfinance
 def fetch_yfinance_data(company):
     ticker_map = {
-        "Google": "GOOGL",  # Corrected from "GOOGLE"
+        "Google": "GOOGL",  
         "Microsoft": "MSFT",
         "Meta": "META"
     }

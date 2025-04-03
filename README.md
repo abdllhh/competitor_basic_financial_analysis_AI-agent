@@ -1,6 +1,14 @@
 # Competitor Basic Financial Analysis AI-Agent
 
 ![Financial Agent Demo](financial_agent.mp4)
+#### Demo Video
+
+Watch a demo of the app in action:
+
+<video controls>
+  <source src="financial_agent.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Overview
 
@@ -43,22 +51,27 @@ This tool is a proof of concept for a bigger tool that uses a better LLM through
    cd competitor_basic_financial_analysis_AI-agent
 
 2. **Setup a Vitrual Env**
+   ```
    python -m venv venv
-   # On Windows:
+   ```
+   ### On Windows:
+   ```
    venv\Scripts\activate
-   # On macOS/Linux:
+   ```
+   ### On macOS/Linux:
+   ```
    source venv/bin/activate
    
-3. **Install Dependencies**
+4. **Install Dependencies**
    ```
    pip install -r requirements.txt
 
-4. **Configure env variables**
+5. **Configure env variables**
    create  .env file
    ```bash
    echo HUGGINGFACE_API_KEY=your-hugging-face-api-key > .env
 
-5. **Run the app**
+6. **Run the app**
    ```
    streamlit run financial_agent.py
 
@@ -69,37 +82,3 @@ Max Revisions: Specify the maximum number of feedback iterations.
 Upload CSV: Upload a CSV file with MyAICo.AI's financial data (a sample financial_data.csv is included in the repo).
 Then Start Analysis
 
-## Workflow
-Start
-  ↓
-Gather Financials → Analyze Data → Research Competitors → Compare Performance
-  ↓                                                        ↓
-Write Report ← Collect Feedback ←(if revision_number < max_revisions)←┘
-  ↓
-End
-
-## System Overview
-+-------------------+
-|    Streamlit UI   |
-| (Input/Output)    |
-+-------------------+
-          ↓
-+-------------------+
-|    LangGraph      |
-| (Workflow)        |
-| - Gather          |
-| - Analyze         |
-| - Research        |
-| - Compare         |
-| - Feedback        |
-| - Report          |
-+-------------------+
-          ↓
-+-------------------+         +-------------------+
-|    Python Backend |         |  External Services|
-| - pandas          |↔-------| - Hugging Face API|
-| - yfinance        |         | - Yahoo Finance   |
-| - requests        |         +-------------------+
-| - python-dotenv   |
-+-------------------+
-   

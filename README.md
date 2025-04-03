@@ -1,14 +1,7 @@
 # Competitor Basic Financial Analysis AI-Agent
 
-![Financial Agent Demo](financial_agent.mp4)
 #### Demo Video
-
-Watch a demo of the app in action:
-
-<video controls>
-  <source src="financial_agent.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/f7a80539-cb79-4792-9393-7172fbd6c2ee
 
 ## Overview
 

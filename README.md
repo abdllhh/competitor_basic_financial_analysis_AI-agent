@@ -66,10 +66,3 @@ The **Competitor Basic Financial Analysis AI-Agent** is a Streamlit-based web ap
    ```
    streamlit run financial_agent.py
 
-## Inputs
-Task: Enter the task (e.g., "Compare financial performance").
-Competitors: Enter competitor names, one per line (e.g., Google\nMeta).
-Max Revisions: Specify the maximum number of feedback iterations.
-Upload CSV: Upload a CSV file with MyAICo.AI's financial data (a sample financial_data.csv is included in the repo).
-Then Start Analysis
-

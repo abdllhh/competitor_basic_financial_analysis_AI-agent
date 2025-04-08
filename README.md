@@ -7,8 +7,6 @@ https://github.com/user-attachments/assets/f7a80539-cb79-4792-9393-7172fbd6c2ee
 
 The **Competitor Basic Financial Analysis AI-Agent** is a Streamlit-based web application designed to compare the financial performance of MyAICo.AI with its competitors (e.g., Google, Microsoft, Meta). The app leverages AI to gather, analyze, and compare financial data, providing a comprehensive report with insights and recommendations. It uses LangGraph to orchestrate a multi-step workflow, yfinance to fetch competitor financial data, and Hugging Face's Mistral-7B model for financial analysis and report generation.
 
-This tool is a proof of concept for a bigger tool that uses a better LLM through OpenAI and is aimed at financial analysts, business owners, or anyone interested in competitive financial analysis. Users can upload a CSV file with their company's financial data, specify competitors, and generate a detailed report with sections like Executive Summary, Financial Analysis, Competitor Comparison, and Recommendations.
-
 ## Features
 
 - **Upload Financial Data**: Upload a CSV file containing MyAICo.AI's financial data.
